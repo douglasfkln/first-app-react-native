@@ -20,6 +20,8 @@ class App extends Component {
           maximumValue={100}
           onValueChange={(valorSelecionado) => this.setState({ valor: valorSelecionado })}
           value={this.state.valor}
+          minimumTrackTintColor="#00FF00"
+          maximumTrackTintColor="#FF0000"
         />
 
         <Text style={{ textAlign: 'center', fontSize: 20 }}>{this.state.valor.toFixed(0)}</Text>
